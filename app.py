@@ -9,9 +9,13 @@ def main():
 
 @app.route('/Temperature_Converter', methods=["GET","POST"])
 def home():
-
+    
+    
+    #when request method is get the form will be shown
     if request.method == "GET":
         return render_template("form.html")
+    
+    #when request method is post the inputs will convert by following methods
     elif request.method == "POST":
         fah = request.form['input']
         cel = request.form['fahrenh']
