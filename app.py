@@ -36,5 +36,5 @@ def home():
             Celsius = (x - 32) * 5/9
             return render_template ('form.html', result2= Celsius)
         
-        
+        #this will convert celsius to fahrenheit and fahrenheit to celsius
 
